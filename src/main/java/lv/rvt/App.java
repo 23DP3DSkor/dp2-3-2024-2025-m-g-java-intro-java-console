@@ -112,27 +112,35 @@ public class App
         // else{
         //     System.out.println("Tax: " + (142100 + (value-1000000) * 0.17));
         // }
-        Scanner scanner = new Scanner(System.in);
-        int result = 0;
-        int summa = 0;
-        while (true) {
-            System.out.println("Give a number: ");
-            int number = Integer.valueOf(scanner.nextLine());
-            if (number == 0) {
-                break;
+        // Scanner scanner = new Scanner(System.in);
+        // int result = 0;
+        // int summa = 0;
+        // while (true) {
+        //     System.out.println("Give a number: ");
+        //     int number = Integer.valueOf(scanner.nextLine());
+        //     if (number == 0) {
+        //         break;
 
-            }
+        //     }
     
-            if (number > 0) {
-                result = result + 1;
-                summa = summa + number;
-                continue;
-            }
-            else{
-                continue;
-            }
+        //     if (number > 0) {
+        //         result = result + 1;
+        //         summa = summa + number;
+        //         continue;
+        //     }
+        //     else{
+        //         continue;
+        //     }
+        // }
+        // System.out.println("Number of numbers: " + result);
+        // System.out.println("Sum of the numbers: " + summa);
+
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println();
+        int number = scanner.nextInt();
+        for (int i = 0; i <= number; i++) {
+            System.out.println(i);
         }
-        System.out.println("Number of numbers: " + result);
-        System.out.println("Sum of the numbers: " + summa);
     }
 }
